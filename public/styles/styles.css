@@ -11,14 +11,18 @@
     font-family: 'Rubik', sans-serif;
 }
 
-#chatPage {
-    display: none;
-}
-
-#loginPage {
-    
-}
-
 .custom-height {
     height: calc(100vh - 40px);
+}
+
+.me {
+    color: red;
+}
+
+.m-status {
+    font-style: italic;
+}
+
+.m-user {
+    color: blue;
 }

@@ -8,6 +8,8 @@ let chatPage = document.querySelector('#chatPage');
 let loginInput = document.querySelector('#loginInput');
 let textInput = document.querySelector('#chatTextInput');
 
+loginInput.focus();
+
 loginPage.style.display = 'flex';
 chatPage.style.display = 'none';
 
@@ -29,9 +31,9 @@ function addMessage(type, user, msg) {
             break;
         case 'msg':
             if (username === user) {
-                ul.innerHTML += `<li class='m-msg'><span class:'me'>${user}</span> ${msg}</li>`;
+                ul.innerHTML += `<li class='m-msg'><span class='me'>${user}:</span> ${msg}</li>`;
             } else {
-                ul.innerHTML += `<li class='m-msg'><span class:'m-user'>${user}</span> ${msg}</li>`;
+                ul.innerHTML += `<li class='m-msg'><span class='m-user'>${user}:</span> ${msg}</li>`;
             }
             break;
     }
